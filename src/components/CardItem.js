@@ -8,7 +8,7 @@ function CardItem(props) {
         <Link className="cards__item__link" to={props.path}>
           <figure className="cards__item__pic-wrap" data-category={props.label}>
             <img
-              className="cards__item__img"
+              className="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80
               alt="Travel Image"
               src={props.src}
             />
