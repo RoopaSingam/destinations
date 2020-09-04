@@ -7,12 +7,9 @@ function CardItem(props) {
       <li className="cards__item">
         <Link className="cards__item__link" to={props.path}>
           <figure className="cards__item__pic-wrap" data-category={props.label}>
-            <img
-              className="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80
-              alt="Travel Image"
-              src={props.src}
-            />
+            <img className="cards__item__img" alt="hj" src={props.img} />
           </figure>
+          {props.src}
           <div className="cards__item__info">
             <h5 className="cards__item__text">{props.text}</h5>
           </div>
