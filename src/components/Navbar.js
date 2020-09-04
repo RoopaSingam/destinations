@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "./Button";
-import { BrowserRouter as Router, Link, Route } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 
 import "./Navbar.css";
-import Dropdown from "./Dropdown";
 
 export default function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setbutton] = useState(true);
-  const [dropdown, setDropdown] = useState(false);
 
   const showButton = () => {
     if (window.innerWidth <= 960) {
@@ -54,7 +52,6 @@ export default function Navbar() {
               >
                 Services
               </Link>
-              {dropdown && <Dropdown />}
             </li>
             <li className="nav-item">
               <Link
